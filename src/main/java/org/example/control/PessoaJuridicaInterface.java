@@ -1,0 +1,13 @@
+package org.example.control;
+
+import org.example.model.PessoaJuridica;
+import java.sql.SQLException;
+import java.util.List;
+
+public interface PessoaJuridicaInterface {
+    void inserirPessoaJuridica(PessoaJuridica pessoaJuridica) throws SQLException;
+    void atualizarPessoaJuridica(PessoaJuridica pessoaJuridica) throws SQLException;
+    void excluirPessoaJuridica(int codUsuario) throws SQLException;
+    PessoaJuridica buscarPessoaJuridicaPorId(int codUsuario) throws SQLException;
+    List<PessoaJuridica> listarPessoasJuridicas() throws SQLException;
+}

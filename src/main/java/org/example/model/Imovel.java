@@ -1,17 +1,16 @@
 package org.example.model;
 
-
 public class Imovel {
     private int cod_imovel;
     private String tipo_imovel;
-    private String cep_endereco;
+    private Endereco endereco;
 
     public Imovel() {}
 
-    public Imovel(int cod_imovel, String tipo_imovel, String cep_endereco) {
+    public Imovel(int cod_imovel, String tipo_imovel, Endereco endereco) {
         this.cod_imovel = cod_imovel;
         this.tipo_imovel = tipo_imovel;
-        this.cep_endereco = cep_endereco;
+        this.endereco = endereco;
     }
 
     public int getCod_imovel() {
@@ -30,11 +29,11 @@ public class Imovel {
         this.tipo_imovel = tipo_imovel;
     }
 
-    public String getCep_endereco() {
-        return cep_endereco;
+    public Endereco getEndereco() {
+        return endereco;
     }
 
-    public void setCep_endereco(String cep_endereco) {
-        this.cep_endereco = cep_endereco;
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 }

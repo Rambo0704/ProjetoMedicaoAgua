@@ -1,6 +1,6 @@
 package org.example.model;
 import java.time.LocalDateTime;
-public class Usuario {
+public abstract class Usuario {
     protected int cod_usuario;
     protected String nome;
     protected String email;
